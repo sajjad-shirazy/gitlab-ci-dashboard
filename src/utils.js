@@ -43,6 +43,8 @@ export const getTopTagName = (list) => {
     return
   }
 
+  return list[0];
+
   var sortedTags = sort.desc(list.map(function (tag) {
     return tag.name;
   }));
